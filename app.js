@@ -1,4 +1,5 @@
 function imgSlider(anything) {
+    // we need to get the image that is clicked on
     document.querySelector('.starbucks').src = anything;
 }
 
