@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Starbucks Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#">
+                <img class="logo" src="logo.png">
+            </a>
+
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="nav navigation" id="navelement">
+                <li><a class="nav-item Home" href="#">Home</a></li>
+                <li><a class="nav-item Menu" href="#">Menu</a></li>
+                <li><a class="nav-item New" href="#">What's New</a></li>
+                <li><a class="nav-item Contact" href="#">Contact Us</a></li>
+            </ul>
+
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just a <span class="textCoffee">Coffee</span><br>It's <span
+                        class="textStarbucks">Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Augue mauris augue neque gravida in.
+                </p>
+                <a href="#" class="button">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="starbucks floating" alt="Frappe-Img">
+            </div>
+        </div>
+        <ul class="thumb ">
+            <li class="thumb-list"><img class="thumb-image " src="thumb1.png"
+                    onclick="imgSlider('img1.png');changeCircleColor('#017143');">
+            </li>
+            <li class="thumb-list"><img class="thumb-image " src="thumb2.png"
+                    onclick="imgSlider('img2.png');changeCircleColor('#F085A4');">
+            </li>
+            <li class="thumb-list"><img class="thumb-image" src="thumb3.png"
+                    onclick="imgSlider('img3.png');changeCircleColor('#CB3FA5');">
+            </li>
+
+        </ul>
+
+        <ul class="sci">
+            <li class="sci-list"><a class="sci-a" href="#"><img src="facebook.png" alt=""></a></li>
+            <li class="sci-list"><a class="sci-a" href="#"><img src="instagram.png" alt=""></a></li>
+            <li class="sci-list"><a class="sci-a" href="#"><img src="twitter.png" alt=""></a></li>
+        </ul>
+
+    </section>
+    <script type="text/javascript" src="app.js"> </script>
+</body>
+
+</html>
